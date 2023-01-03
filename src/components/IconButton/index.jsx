@@ -1,8 +1,8 @@
 import { ButtonBox } from './styles'
 
-const IconButton = ({image, title = null, backgroundColor = '#163832'}) => {
+const IconButton = ({link, target, image, title = null, backgroundColor = '#163832'}) => {
   return (
-    <ButtonBox backgroundColor={backgroundColor} title={title}> 
+    <ButtonBox href={link} target={target} backgroundColor={backgroundColor} title={title}> 
         {image? 
             <img src={image} alt="" />
         : 

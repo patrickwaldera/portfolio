@@ -28,6 +28,10 @@ export const Info = styled.div`
         font-weight: 700;
         font-size: 3.5rem;
         line-height: 4.125rem;
+
+        @media(max-width: 480px) {
+            font-size: 2.5rem;
+        }
     }
 
     .info-txt {
@@ -57,7 +61,7 @@ export const InfoDiv = styled.div`
 
 export const AboutImg = styled.img`
     width: 455px;
-    height: 341px;
+    height: 320px;
 
     max-width: 100%;
     
@@ -65,6 +69,11 @@ export const AboutImg = styled.img`
     filter: drop-shadow(-40px 20px 75px rgba(218, 241, 222, 0.1));
     border-radius: 170.5px 25px;
     object-fit: cover;
+
+    @media(max-width: 480px) {
+        height: 200px;
+    }
+
 `
 
 export const ButtonsContainer = styled.div`

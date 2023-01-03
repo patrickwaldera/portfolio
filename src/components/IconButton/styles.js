@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const ButtonBox = styled.div`
+export const ButtonBox = styled.a`
 
     display: flex;
     flex-direction: row;
@@ -9,6 +9,11 @@ export const ButtonBox = styled.div`
     background: ${({backgroundColor}) => backgroundColor};
     border-radius: 5px;
     padding: 8px;
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(1.2);
+    }
 
     img {
         max-width: 1.5rem;

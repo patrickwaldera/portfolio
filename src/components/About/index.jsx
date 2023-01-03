@@ -22,8 +22,8 @@ const About = () => {
                     <p>Sou Desenvolvedor Full Stack Júnior e estou ansioso para encontrar uma oportunidade para continuar a desenvolver minhas habilidades e crescer profissionalmente.</p>
                 </InfoDiv>
                 <ButtonsContainer>
-                    <IconButton image={github}> </IconButton>
-                    <IconButton image={linkedin}> </IconButton>
+                    <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github}> </IconButton>
+                    <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin}> </IconButton>
                     <IconButton 
                         image={send} 
                         backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'

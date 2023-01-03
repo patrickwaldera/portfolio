@@ -10,7 +10,8 @@ export default createGlobalStyle `
         box-sizing: border-box;
     }
 
-    ol, ul {
+    ol, ul, li {
         list-style: none;
+        list-style-type: none;
     }
 `
