@@ -10,7 +10,6 @@ export const ButtonBox = styled.a`
     border-radius: 5px;
     padding: 8px;
     cursor: pointer;
-
     &:hover{
         filter: brightness(1.2);
     }
