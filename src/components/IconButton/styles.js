@@ -24,7 +24,7 @@ export const ButtonBox = styled.a`
         font-weight: 500;
         font-size: 1.125rem;
         line-height: 1.313rem;
-        margin-left: 0.375rem;
+        margin: 0 0.375rem;
         color: #051F20;
     }
 
