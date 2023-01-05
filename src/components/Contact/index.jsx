@@ -50,8 +50,11 @@ const Contact = () => {
                     type="text"
                     name="name"
                     placeholder='Insira seu nome aqui'
+                    {...register("name", {
+                      required: true
+                    })}
                   />
-                  {errors.email && errors.email.type === "required" && (
+                  {errors.name && errors.name.type === "required" && (
                     <p className="errorMsg">Você precisa inserir seu nome.</p>
                   )}
                 </div>
@@ -79,8 +82,11 @@ const Contact = () => {
                     type="text"
                     name="mensage"
                     placeholder='Escreva sua mensagem'
+                    {...register("mensage", {
+                      required: true
+                    })}
                   />
-                  {errors.email && errors.email.type === "required" && (
+                  {errors.mensage && errors.mensage.type === "required" && (
                     <p className="errorMsg">Você precisa inserir sua mensagem.</p>
                   )}
                 </div>
