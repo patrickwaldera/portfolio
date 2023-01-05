@@ -7,6 +7,7 @@ import css from '../../assets/skillsicons/Front/css.png'
 import JS from '../../assets/skillsicons/Front/js.png'
 import reactJS from '../../assets/skillsicons/Front/React.svg'
 import next from '../../assets/skillsicons/Front/next.png'
+import styledcomponents from '../../assets/skillsicons/Front/styled-components.png'
 
 //Back-end
 import python from '../../assets/skillsicons/Back/python.png'
@@ -23,7 +24,8 @@ const Skills = () => {
     {id: 2, image: css, name: 'CSS'},
     {id: 3, image: JS, name: 'JavaScript'},
     {id: 4, image: reactJS, name: 'ReactJS'},
-    {id: 5, image: next, name: 'Next'}
+    {id: 5, image: next, name: 'Next'},
+    {id: 6, image: styledcomponents, name: 'Styled Components'}
   ];
   const skillsback = [
     {id: 1, image: python, name: 'Python'},

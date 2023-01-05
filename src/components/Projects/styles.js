@@ -60,5 +60,9 @@ export const Carrousel = styled.div`
         font-size: 10px;
         margin-top: 20px;
     }
+
+    .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+        display: none !important;
+    }
     
 `

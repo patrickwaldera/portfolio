@@ -26,6 +26,7 @@ export const SkillBoxList = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 50px;
     }
 `
 
