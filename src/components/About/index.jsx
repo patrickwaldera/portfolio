@@ -25,7 +25,8 @@ const About = () => {
                     <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github}> </IconButton>
                     <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin}> </IconButton>
                     <IconButton 
-                        image={send} 
+                        image={send}
+                        link="#contato"
                         backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'
                         title='Contato'
                     > </IconButton>

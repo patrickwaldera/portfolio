@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ButtonBox = styled.a`
-
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;

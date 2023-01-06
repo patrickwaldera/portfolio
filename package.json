@@ -9,10 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "email-js": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
+    "react-timeline-scribble": "^1.0.14",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6"
   },

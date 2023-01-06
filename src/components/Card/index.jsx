@@ -8,31 +8,34 @@ import {
 } from './styles'
 import { IconButton } from '../IconButton'
 import github from '../../assets/projects/github.svg'
-import cs50w from '../../assets/projects/cs50w.jpg'
 
-const Card = () => {
+const Card = ({image, title, description, linkCode, linkDemo}) => {
   return (
     <CardContainer>
         <CardImage>
-            <img src={cs50w} alt="" />
+            <img src={image} alt="" />
         </CardImage>
         <CardInfo>
-            <CardTittle>MyPasswords</CardTittle>
+            <CardTittle>{title}</CardTittle>
             <CardText>
-                Aplicação desenvolvida para o curso CS50W de harvard. Aplicação desenvolvida para o curso CS50W de harvard. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur atque asperiores obcaecati id, ipsum dolores voluptatibus quos, esse ab necessitatibus eum consequatur iure perspiciatis sequi vero impedit nemo veritatis?
+                {description}
             </CardText>
             <CardButtons>
                 <IconButton 
-                    link="https://github.com/patrickwaldera"
-                    target={'_blank'}
-                    image={github}
-                    backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'>
+                    link={linkCode}
+                    target= '_blank'
+                    image= {github}
+                    backgroundColor= 'linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'>
                 </IconButton>
+                
+                {linkDemo.length > 0 &&
                 <IconButton 
-                        backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'
-                        title='Demo'
+                    link={linkDemo}
+                    target= '_blank'
+                    backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'
+                    title='Demo'
                 >
-                </IconButton>
+                </IconButton>}
             </CardButtons>
         </CardInfo>
     </CardContainer>

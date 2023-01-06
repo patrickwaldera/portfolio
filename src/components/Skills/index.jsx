@@ -38,7 +38,7 @@ const Skills = () => {
   ];
   return (
     <SkillsContainer>
-        <SkillTitle id='skills'>
+        <SkillTitle id='habilidades'>
           <h3>Habilidades</h3>
           <p>Nível técnico</p>
         </SkillTitle>

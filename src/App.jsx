@@ -2,16 +2,29 @@ import { Header } from './components/Header';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
-import { ContainerHeader, Wave, ContainerProjects, ContainerMiddle } from "./styles";
+import { 
+  ContainerHeader,
+  Wave,
+  ContainerProjects,
+  ContainerMiddle,
+  ContainerFooter
+} from "./styles";
 import { Qualifications } from './components/Qualifications';
 import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { MenuMobile } from './components/MenuMobile'
+import { useState } from 'react';
 
 function App() {
-
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
     <>
+    <MenuMobile 
+      menuIsVisible={menuIsVisible}
+      setMenuIsVisible={setMenuIsVisible}
+    />
     <ContainerHeader>
-      <Header />
+      <Header setMenuIsVisible={setMenuIsVisible} />
       <About />
       <Skills />
     </ContainerHeader>
@@ -32,6 +45,9 @@ function App() {
       <Qualifications />
       <Contact />
     </ContainerMiddle>
+    <ContainerFooter>
+      <Footer />
+    </ContainerFooter>
     </>
   )
 }

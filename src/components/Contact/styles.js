@@ -114,6 +114,27 @@ export const FormContainer = styled.div`
         width: 100%;
     }
 
+    .loading{
+        color: #ffffff;
+        animation: rotate 1s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    .formResposta{
+        color: #ffffff;
+        text-align: center;
+        transition: 1s;
+    }
+
     .errorMsg {
         text-align: start;
         max-width: 350px;
@@ -144,6 +165,13 @@ export const FormContainer = styled.div`
         padding: 5px 5px 5px 20px;
         height: 64px;
         border-radius: 10px;
+    }
+
+    .mensage{
+        border-radius: 10px;
+        height: 128px;
+        padding: 20px;
+        resize: none;
     }
 
     button {

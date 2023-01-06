@@ -39,7 +39,7 @@ export const CardText = styled.p`
     font-size: 0.875rem;
     line-height: 1rem;
     margin-bottom: 24px;
-    height: 48px;
+    height: 50px;
 
 
     -webkit-line-clamp: 3;

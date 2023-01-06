@@ -18,6 +18,11 @@ export const ContainerProjects = styled.div`
     background: #ffffff;
 `
 
+export const ContainerFooter = styled.div`
+    max-width: 100vw;
+    background: #ffffff;
+`
+
 export const ContainerMiddle = styled.div`
     max-width: 100vw;
     background: linear-gradient(180deg, #051F20 0%, #0B2B26 100%);

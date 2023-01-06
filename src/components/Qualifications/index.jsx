@@ -10,7 +10,7 @@ const Qualifications = () => {
   
   return (
     <QualificationsContainer>
-        <QualificationsTitle>
+        <QualificationsTitle id='qualificacoes'>
           <h3>Qualificações</h3>
           <p>Formação e experiência profissional</p>
         </QualificationsTitle>
@@ -19,7 +19,7 @@ const Qualifications = () => {
             <p>Formação</p>
             <Timeline>
               <Event interval={"2020 – 2022"} title={"Tecnólogo em Análise e Desenvolvimento de Sistemas"} subtitle={"Faculdades Integradas Camões"} />
-              <Event interval={"2022"} title={"Certificado Profissional de UX Design"} subtitle={"Google"} />
+              <Event interval={"2022-2023"} title={"Certificado Profissional de UX Design"} subtitle={"Google"} />
               <Event interval={"2022-2023"} title={"Pós-graduação em Gestão da Qualidade de Software"} subtitle={"UniBF"} />
               <Event interval={"2022-2023"} title={"Pós-graduação em Desenvolvimento em Aplicações Web"} subtitle={"UniBF"} />
             </Timeline>

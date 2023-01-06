@@ -11,22 +11,41 @@ import {
 import { IconButton } from '../IconButton'
 import send from '../../assets/send.png'
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import { CgSpinnerTwoAlt } from "react-icons/cg";
 
 const Contact = () => {
-
+  const [ mensagem, setMensagem] = useState('');
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const sendEmail = (data, e) => {
+    e.preventDefault();
+    setLoading(true)
+    emailjs.sendForm('service_whjfgpj', 'template_sa27lpv', e.target, 'wjUdJ8YF_dCjvRneJ')
+      .then(
+        (result) => {
+          console.log(result.text);
+          setMensagem('Mensagem enviada com sucesso!')
+          setLoading(false)
+        },
+        (error) => {
+          console.log(error.text);
+          setMensagem('Houve um erro ao enviar sua mensagem!')
+          setLoading(false)
+        }
+      );
+    e.target.reset();
   };
 
   return (
     <ContactContainer>
-        <ContactTitle>
+        <ContactTitle id='contato'>
           <h3>Contato</h3>
           <p>Entre em contato!</p>
         </ContactTitle>
@@ -43,7 +62,7 @@ const Contact = () => {
           <FormWrapper>
             <p className='title'>Escreva sua mensagem</p>
             <FormContainer>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(sendEmail)}>
                 <div className="form-control">
                   <label>Nome:</label>
                   <input
@@ -78,7 +97,8 @@ const Contact = () => {
                 </div>
                 <div className="form-control">
                   <label>Mensagem:</label>
-                  <input
+                  <textarea
+                    className='mensage'
                     type="text"
                     name="mensage"
                     placeholder='Escreva sua mensagem'
@@ -87,20 +107,26 @@ const Contact = () => {
                     })}
                   />
                   {errors.mensage && errors.mensage.type === "required" && (
-                    <p className="errorMsg">Você precisa inserir sua mensagem.</p>
+                    <p className="errorMsg">Você precisa escrever uma mensagem.</p>
                   )}
                 </div>
                 <div className="form-control">
-                  <label></label>
+                    <label></label>
+                {loading? 
+                  <CgSpinnerTwoAlt size={36} className='loading'/>
+                : 
                   <button type="submit">
-                    <IconButton 
+                    <IconButton
                           image={send} 
                           backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'
                           title='Enviar mensagem'
                       > </IconButton>
                   </button>
-                </div>
+                }
+                </div> 
               </form>
+              {mensagem? 
+              <p className='formResposta'>{mensagem}</p> : null}
             </FormContainer>
           </FormWrapper>
         </Wraper>
