@@ -1,4 +1,3 @@
-import patrickwaldera from '../../assets/patrickwaldera.png'
 import styled from "styled-components";
 
 export const AboutContainer = styled.section`
@@ -61,7 +60,7 @@ export const InfoDiv = styled.div`
 
 export const AboutImg = styled.img`
     width: 455px;
-    height: 320px;
+    height: auto;
 
     max-width: 100%;
     
@@ -69,11 +68,6 @@ export const AboutImg = styled.img`
     filter: drop-shadow(-40px 20px 75px rgba(218, 241, 222, 0.1));
     border-radius: 170.5px 25px;
     object-fit: cover;
-
-    @media(max-width: 480px) {
-        height: 200px;
-    }
-
 `
 
 export const ButtonsContainer = styled.div`

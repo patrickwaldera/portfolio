@@ -6,7 +6,7 @@ import {
     ButtonsContainer
 } from "./styles"
 import { IconButton } from '../IconButton'
-import patrickwaldera from '../../assets/patrickwaldera.png'
+import patrickwaldera from '../../assets/patrickwaldera.jpg'
 import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
 import send from '../../assets/send.png'
