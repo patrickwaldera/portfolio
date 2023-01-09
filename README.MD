@@ -1,6 +1,6 @@
 [![header][header-url]][header-link]
 
-# 💻 Portifólio
+# 💻 Portfólio
 > Projeto pessoal para concentrar informações profissionais e de contato.
 
 ---
@@ -8,7 +8,7 @@
 
 Neste projeto pude aplicar conhecimentos de UX/UI, design responsivo, criação de componentes em ReactJS e estilização usando Styled Components, além do uso de bibliotecas para criação do Carrossel, da TimeLine e de animações do portifólio.
 
-###Links
+### **Links**
 * Protótipo Figma **[Acessar][figma-url]**
 * Carrossel: **[React Slick][react-slick-url]**
 * TimeLine: **[react-timeline-scribble][timeline-url]**
@@ -17,7 +17,7 @@ Neste projeto pude aplicar conhecimentos de UX/UI, design responsivo, criação 
 
 <!-- Markdown link & img dfn's -->
 
-[header-url]: portifolioImg.png
+[header-url]: portfolioImg.png
 [header-link]: https://patrickwaldera.vercel.app/
 
 [figma-url]: https://www.figma.com/proto/l5iJwquByOs34ON0CgGbbs/Portif%C3%B3lio?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1
