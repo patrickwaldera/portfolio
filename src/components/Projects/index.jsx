@@ -77,7 +77,7 @@ const Projects = () => {
           <p>Trabalhos recentes</p>
         </ProjectsTitle>
 
-        <Carrousel>
+        <Carrousel data-aos="fade-up">
           <Slider {...settings}>
             {projects.map((project) => 
               <Card key={project.id} image={project.image} title={project.title} description={project.description} linkCode={project.linkCode} linkDemo={project.linkDemo}/>

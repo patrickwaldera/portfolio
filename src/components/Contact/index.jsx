@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { CgSpinnerTwoAlt } from "react-icons/cg";
+import linkedin2 from '../../assets/linkedin2.png'
 
 const Contact = () => {
   const [ mensagem, setMensagem] = useState('');
@@ -50,10 +51,10 @@ const Contact = () => {
           <p>Entre em contato!</p>
         </ContactTitle>
         <Wraper>
-          <LinkedinContainer>
+          <LinkedinContainer data-aos="fade-right">
             <p>Vamos nos conectar!</p>
             <LinkedinBox>
-              <img src="src/assets/linkedin2.png" alt="" />
+              <img src={linkedin2} alt="" width="48px" height="auto"/>
               <h6>Linkedin</h6>
               <p>Patrick Waldera</p>
               <a href="https://www.linkedin.com/in/patrickwaldera/" target='_blank'>Acessar</a>
@@ -61,7 +62,7 @@ const Contact = () => {
           </LinkedinContainer>
           <FormWrapper>
             <p className='title'>Escreva sua mensagem</p>
-            <FormContainer>
+            <FormContainer data-aos="fade-up">
               <form onSubmit={handleSubmit(sendEmail)}>
                 <div className="form-control">
                   <label>Nome:</label>

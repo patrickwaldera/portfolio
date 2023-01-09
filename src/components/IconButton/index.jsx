@@ -4,7 +4,7 @@ const IconButton = ({link, target, image, title = null, backgroundColor = '#1638
   return (
     <ButtonBox href={link} target={target} backgroundColor={backgroundColor} title={title}> 
         {image? 
-            <img src={image} alt="" />
+            <img src={image} alt="" width="24px" height="auto"/>
         : 
             null
         }

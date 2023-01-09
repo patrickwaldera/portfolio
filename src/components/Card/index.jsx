@@ -13,7 +13,7 @@ const Card = ({image, title, description, linkCode, linkDemo}) => {
   return (
     <CardContainer>
         <CardImage>
-            <img src={image} alt="" />
+            <img src={image} alt="" width="340" height="306" loading='lazy'/>
         </CardImage>
         <CardInfo>
             <CardTittle>{title}</CardTittle>

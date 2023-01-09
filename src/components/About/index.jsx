@@ -14,7 +14,7 @@ import send from '../../assets/send.png'
 const About = () => {
   return (
     <AboutContainer>
-        <Info>
+        <Info data-aos="fade-in">
             <div className="info-txt">
                 <h1>Patrick Waldera</h1>
                 <InfoDiv>
@@ -33,7 +33,7 @@ const About = () => {
                 </ButtonsContainer>   
             </div>
             <div>
-                <AboutImg src={patrickwaldera} alt="" />
+                <AboutImg src={patrickwaldera} alt="" width="455px" height="auto" />
             </div>
         </Info>
     </AboutContainer>

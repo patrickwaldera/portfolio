@@ -9,7 +9,7 @@ export const Wave = styled.div`
     svg {
         max-width: 100vw;
         position: relative; 
-        bottom: 20px;      
+        bottom: 20px;
     }
 `
 

@@ -13,13 +13,16 @@ export const SkillBoxContainer = styled.div`
     flex-wrap: wrap;
 `
 export const SkillBoxList = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 190px;
-    flex-wrap: wrap;
-    gap: 18px;
+    margin: 0 auto;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 190px;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
 
     li {
         display: flex;
