@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import cs50w from '../../assets/projects/cs50w.jpg'
-import weather from '../../assets/projects/weather.jpg'
+import weather from '../../assets/projects/weatherApp.jpg'
 
 const Projects = () => {
   const projects = [
