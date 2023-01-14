@@ -4,8 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import cs50w from '../../assets/projects/cs50w.jpg'
-import pokedex from '../../assets/projects/pokedex.jpg'
-import calculadora from '../../assets/projects/calculadora.jpg'
+import weather from '../../assets/projects/weather.jpg'
 
 const Projects = () => {
   const projects = [
@@ -19,19 +18,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      image: pokedex,
-      title: 'Pokedex',
-      description: 'Pokedex criada durante o Bootcamp Orange Tech+ promovido pela DIO junto ao banco Inter.',
-      linkCode: 'https://github.com/patrickwaldera/OrangeTech-DIO/tree/main/pokedex',
-      linkDemo: ''
-    },
-    {
-      id: 3,
-      image: calculadora,
-      title: 'Calculadora',
-      description: 'Calculadora criada usando ReactJS durante o Bootcamp Orange Tech+',
-      linkCode: 'https://github.com/patrickwaldera/OrangeTech-DIO/tree/main/react/desafio01-calculadora',
-      linkDemo: ''
+      image: weather,
+      title: 'Weather',
+      description: 'Aplicação consumindo uma API pública que mostra a temperatura atual de determinada cidade',
+      linkCode: 'https://github.com/patrickwaldera/weather',
+      linkDemo: 'https://weather-pw.vercel.app/'
     }
   ]
   const settings = {
@@ -79,7 +70,7 @@ const Projects = () => {
 
         <Carrousel data-aos="fade-up">
           <Slider {...settings}>
-            {projects.map((project) => 
+            {projects.reverse().map((project) => 
               <Card key={project.id} image={project.image} title={project.title} description={project.description} linkCode={project.linkCode} linkDemo={project.linkDemo}/>
             )}
           </Slider>
