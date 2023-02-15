@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import cs50w from '../../assets/projects/cs50w.jpg'
 import weather from '../../assets/projects/weatherApp.jpg'
+import techspace from '../../assets/projects/techspace.jpg'
 
 const Projects = () => {
   const projects = [
@@ -23,6 +24,14 @@ const Projects = () => {
       description: 'Aplicação consumindo uma API pública que mostra a temperatura atual de determinada cidade',
       linkCode: 'https://github.com/patrickwaldera/weather',
       linkDemo: 'https://weather-pw.vercel.app/'
+    },
+    {
+      id: 3,
+      image: techspace,
+      title: 'Tech Space',
+      description: 'Front-end de um e-commerce com as principais funcionalidades. Ainda em desenvolvimento...',
+      linkCode: 'https://github.com/patrickwaldera/tech-space',
+      linkDemo: 'https://techspace-pw.vercel.app/'
     }
   ]
   const settings = {
