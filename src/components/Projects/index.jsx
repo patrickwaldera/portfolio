@@ -29,7 +29,7 @@ const Projects = () => {
       id: 3,
       image: techspace,
       title: 'Tech Space',
-      description: 'Front-end de um e-commerce com as principais funcionalidades. Ainda em desenvolvimento...',
+      description: 'Front-end de um e-commerce, criado com o framework NextJS, tendo como objetivo praticar conhecimentos em ReactJS, Styled Components, React Hooks e outras tecnologias.',
       linkCode: 'https://github.com/patrickwaldera/tech-space',
       linkDemo: 'https://techspace-pw.vercel.app/'
     }
