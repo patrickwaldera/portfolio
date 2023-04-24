@@ -3,37 +3,9 @@ import { ProjectsContainer, ProjectsTitle, Carrousel} from './styles'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import cs50w from '../../assets/projects/cs50w.jpg'
-import weather from '../../assets/projects/weatherApp.jpg'
-import techspace from '../../assets/projects/techspace.jpg'
+import { projects } from '../../utils/config'
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      image: cs50w,
-      title: 'MyPasswords',
-      description: 'Meu projeto final para o curso CS50w. Um gerenciador de senhas construído usando Django e ReactJS.',
-      linkCode: 'https://github.com/patrickwaldera/cs50w',
-      linkDemo: 'https://www.youtube.com/watch?v=322oe2GNMtQ&ab_channel=PatrickWaldera'
-    },
-    {
-      id: 2,
-      image: weather,
-      title: 'Weather',
-      description: 'Aplicação consumindo uma API pública que mostra a temperatura atual de determinada cidade',
-      linkCode: 'https://github.com/patrickwaldera/weather',
-      linkDemo: 'https://weather-pw.vercel.app/'
-    },
-    {
-      id: 3,
-      image: techspace,
-      title: 'Tech Space',
-      description: 'Front-end de um e-commerce, criado com o framework NextJS, tendo como objetivo praticar conhecimentos em ReactJS, Styled Components, React Hooks e outras tecnologias.',
-      linkCode: 'https://github.com/patrickwaldera/tech-space',
-      linkDemo: 'https://techspace-pw.vercel.app/'
-    }
-  ]
   const settings = {
     dots: true,
       infinite: false,
@@ -79,7 +51,7 @@ const Projects = () => {
 
         <Carrousel data-aos="fade-up">
           <Slider {...settings}>
-            {projects.reverse().map((project) => 
+            {projects.slice().reverse().map((project) => 
               <Card key={project.id} image={project.image} title={project.title} description={project.description} linkCode={project.linkCode} linkDemo={project.linkDemo}/>
             )}
           </Slider>

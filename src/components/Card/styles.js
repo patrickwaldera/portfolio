@@ -3,16 +3,30 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
     max-width: 340px;
     filter: drop-shadow(5px 4px 10px rgba(0, 0, 0, 0.3));
+    a {
+        text-decoration: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const CardImage = styled.div`
     width: 100%;
     height: 306px;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 25px 25px 0px 0px;
     img {
-        border-radius: 25px 25px 0px 0px;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.05);
+        }
     }
 `
 
