@@ -16,7 +16,6 @@ export const CardImage = styled.div`
     width: 100%;
     height: 306px;
     overflow: hidden;
-    background-color: red;
     border-radius: 25px 25px 0px 0px;
     img {
         width: 100%;

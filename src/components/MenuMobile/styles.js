@@ -44,10 +44,18 @@ export const NavMenu = styled.nav`
     justify-content: center;
     gap: 2rem;
 
-    a {
+    .nav-links {
         font-weight: 400;
         font-size: 1.5rem;
         text-decoration: none;
         color: #ffffff;
+        cursor: pointer;
+        padding: 6px 12px;
+        border-radius: 10px;
+        transition: .5s;
+
+        &:hover{
+          background-color: #00000089;
+        }
     }
 `

@@ -32,10 +32,11 @@ export const FooterNav = styled.nav`
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
-    a {
+    .nav-links {
         text-decoration: none;
         color: #051F20;
         padding: 0.5rem;
+        cursor: pointer;
     }
     @media (max-width: 600px) {
         flex-direction: column;

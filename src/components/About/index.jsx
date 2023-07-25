@@ -22,8 +22,8 @@ const About = () => {
                     <p>Sou Desenvolvedor Full Stack Júnior e estou ansioso para encontrar uma oportunidade para continuar a desenvolver minhas habilidades e crescer profissionalmente.</p>
                 </InfoDiv>
                 <ButtonsContainer>
-                    <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github}> </IconButton>
-                    <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin}> </IconButton>
+                    <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github} altText='Github'> </IconButton>
+                    <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin} altText='Linkedin'> </IconButton>
                     <IconButton 
                         image={send}
                         link="#contato"
@@ -33,7 +33,7 @@ const About = () => {
                 </ButtonsContainer>   
             </div>
             <div>
-                <AboutImg src={patrickwaldera} alt="" width="455px" height="auto" />
+                <AboutImg src={patrickwaldera} alt="" width="455px" height="auto" min-height="321px" />
             </div>
         </Info>
     </AboutContainer>

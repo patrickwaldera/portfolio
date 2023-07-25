@@ -38,13 +38,21 @@ export const NavMenu = styled.div`
     align-items: center;
     flex-wrap: wrap;
     padding: 0px;
-    gap: 30px;
+    gap: 20px;
 
-    a {
+    .nav-links {
         font-weight: 400;
         font-size: 1.125rem;
         text-decoration: none;
         color: #ffffff;
+        cursor: pointer;
+        padding: 6px 12px;
+        border-radius: 5px;
+        transition: .5s;
+
+        &:hover{
+          background-color: #00000089;
+        }
     }
 `
 

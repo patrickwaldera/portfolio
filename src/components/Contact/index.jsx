@@ -54,7 +54,7 @@ const Contact = () => {
           <LinkedinContainer data-aos="fade-right">
             <p>Vamos nos conectar!</p>
             <LinkedinBox>
-              <img src={linkedin2} alt="" width="48px" height="auto"/>
+              <img src={linkedin2} alt="Linkedin" width="48px" min-height="48"/>
               <h6>Linkedin</h6>
               <p>Patrick Waldera</p>
               <a href="https://www.linkedin.com/in/patrickwaldera/" target='_blank'>Acessar</a>

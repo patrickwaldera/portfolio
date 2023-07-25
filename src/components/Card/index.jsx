@@ -14,7 +14,7 @@ const Card = ({image, title, description, linkCode, linkDemo}) => {
     <CardContainer >
         <a href={linkDemo} target='_blank'>
             <CardImage>
-                <img src={image} alt="" width="340" height="306" loading='lazy'/>
+                <img src={image} alt={title} width="340" height="306" loading='lazy' />
             </CardImage>
             <CardInfo>
                 <CardTittle>{title}</CardTittle>
@@ -26,6 +26,7 @@ const Card = ({image, title, description, linkCode, linkDemo}) => {
                         link={linkCode}
                         target= '_blank'
                         image= {github}
+                        altText="Github"
                         backgroundColor= 'linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'>
                     </IconButton>
                     

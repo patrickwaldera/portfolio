@@ -6,6 +6,7 @@ import {
 } from './styles'
 
 import { IconButton } from '../IconButton'
+import { Link } from "react-scroll";
 import github from '../../assets/github.png'
 import linkedin from '../../assets/linkedin.png'
 
@@ -17,15 +18,25 @@ const Footer = () => {
           <h6>Patrick Waldera</h6>
         </FootertTitle>
         <FooterNav>
-          <a href="#inicio">Início</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#qualificacoes">Qualificações</a>
-          <a href="#contato">Contato</a>
+          <Link className='nav-links' to="inicio" smooth={true} offset={-70} duration={500}>
+            Início
+          </Link>
+          <Link className='nav-links' to="habilidades" smooth={true} offset={-70} duration={500}>
+            Habilidades
+          </Link>
+          <Link className='nav-links' to="projetos" smooth={true} offset={-70} duration={500}>
+            Projetos
+          </Link>
+          <Link className='nav-links' to="qualificacoes" smooth={true} offset={-70} duration={500}>
+            Qualificações
+          </Link>
+          <Link className='nav-links' to="contato" smooth={true} offset={-70} duration={500}>
+            Contato
+          </Link>
         </FooterNav>
         <ButtonsContainer>
-          <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github}> </IconButton>
-          <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin}> </IconButton>
+          <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github} altText='Github'> </IconButton>
+          <IconButton link="https://www.linkedin.com/in/patrickwaldera/" target={'_blank'} image={linkedin} altText='Linkedin'> </IconButton>
        </ButtonsContainer> 
        <p>© 2023</p>  
     </FooterContainer>
