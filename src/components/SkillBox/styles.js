@@ -45,6 +45,7 @@ export const SkillImg = styled.img`
     max-width: 36px;
     max-height: 36px;
     margin-bottom: 5px;
+    object-fit: contain;
 `
 
 export const SkillName = styled.p`
