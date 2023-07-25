@@ -36,6 +36,11 @@ export const Info = styled.div`
     .info-txt {
         max-width: 632px;
     }
+
+    .image{
+        min-height: 320px;
+    }
+
 `
 
 export const InfoDiv = styled.div`
@@ -61,7 +66,7 @@ export const InfoDiv = styled.div`
 export const AboutImg = styled.img`
     width: 455px;
     height: auto;
-
+    min-height: 100%;
     max-width: 100%;
     
     border: 3px solid rgba(255, 255, 255, 0.4);

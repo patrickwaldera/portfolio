@@ -18,6 +18,7 @@ export const ButtonBox = styled.a`
         max-width: 1.5rem;
         max-height: 1.5rem;
         object-fit: contain;
+        min-height: 1.5rem;
     }
 
     p {

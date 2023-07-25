@@ -19,7 +19,7 @@ const About = () => {
                 <h1>Patrick Waldera</h1>
                 <InfoDiv>
                     <h3>Desenvolvedor</h3>
-                    <p>Sou Desenvolvedor Full Stack Júnior e estou ansioso para encontrar uma oportunidade para continuar a desenvolver minhas habilidades e crescer profissionalmente.</p>
+                    <p>Sou Desenvolvedor Full Stack Júnior, buscando crescimento profissional e experiências para aperfeiçoar minhas habilidades. Estou motivado a superar desafios e contribuir com soluções inovadoras.</p>
                 </InfoDiv>
                 <ButtonsContainer>
                     <IconButton link="https://github.com/patrickwaldera" target={'_blank'} image={github} altText='Github'> </IconButton>
@@ -28,12 +28,13 @@ const About = () => {
                         image={send}
                         link="#contato"
                         backgroundColor='linear-gradient(180deg, #E4FFE9 0%, #A7FFB6 100%)'
-                        title='Contato'
+                        title="Contato"
+                        altText="Entrar em contato"
                     > </IconButton>
                 </ButtonsContainer>   
             </div>
-            <div>
-                <AboutImg src={patrickwaldera} alt="" width="455px" height="auto" min-height="321px" />
+            <div className="image">
+                <AboutImg src={patrickwaldera} alt="" width="455px" height="auto" />
             </div>
         </Info>
     </AboutContainer>
