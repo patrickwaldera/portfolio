@@ -27,7 +27,7 @@ const Qualifications = () => {
           <ExpContainer data-aos="fade-down">
           <p>Experiência profissional</p>
           <Timeline>
-              <Event interval={"2017 - Atual"} title={"Exército Brasileiro"} subtitle={"Cabo no Exército Brasileiro exercendo a função de auxiliar da Seção de Comunicação Social em um Batalhão de Suprimento."} />
+              <Event interval={"2017 - 2023"} title={"Exército Brasileiro"} subtitle={"Durante seis anos, servi ao Exército Brasileiro desempenhando a função de Auxiliar da Seção de Comunicação Social cuja missão principal era manter e promover a imagem da instituição, e assumi também, uma função de grande responsabilidade como Auxiliar da Reserva de Armamento."} />
           </Timeline>
           </ExpContainer>
         </TimelineContainer>
