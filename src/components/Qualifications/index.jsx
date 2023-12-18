@@ -18,10 +18,9 @@ const Qualifications = () => {
           <ExpContainer data-aos="fade-down">
             <p>Formação</p>
             <Timeline>
-              <Event interval={"2020 – 2022"} title={"Tecnólogo em Análise e Desenvolvimento de Sistemas"} subtitle={"Faculdades Integradas Camões"} />
-              <Event interval={"2022-2023"} title={"Certificado Profissional de UX Design"} subtitle={"Google"} />
-              <Event interval={"2022-2023"} title={"Pós-graduação em Gestão da Qualidade de Software"} subtitle={"UniBF"} />
+              <Event interval={"2023 até o momento"} title={"Bacharel em Engenharia de Software"} subtitle={"Universidade Positivo"} />
               <Event interval={"2022-2023"} title={"Pós-graduação em Desenvolvimento em Aplicações Web"} subtitle={"UniBF"} />
+              <Event interval={"2020 – 2022"} title={"Tecnólogo em Análise e Desenvolvimento de Sistemas"} subtitle={"Faculdades Integradas Camões"} />
             </Timeline>
           </ExpContainer>
           <ExpContainer data-aos="fade-down">
