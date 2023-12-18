@@ -14,8 +14,8 @@ const Card = ({image, title, description, linkCode, linkDemo}) => {
     window.open(`${linkDemo}`, '_blank');
   }
   return (
-    <CardContainer onClick={handleClick} >
-        <CardImage>
+    <CardContainer>
+        <CardImage onClick={handleClick}>
             <img src={image} alt={title} width="340" height="306" loading='lazy' />
         </CardImage>
         <CardInfo>

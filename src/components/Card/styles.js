@@ -6,10 +6,6 @@ export const CardContainer = styled.div`
     a {
         text-decoration: none;
     }
-
-    &:hover {
-        cursor: pointer;
-    }
 `
 
 export const CardImage = styled.div`
@@ -25,6 +21,7 @@ export const CardImage = styled.div`
         &:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.05);
+            cursor: pointer;
         }
     }
 `
