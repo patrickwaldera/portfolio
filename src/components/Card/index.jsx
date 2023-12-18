@@ -7,7 +7,7 @@ import {
     CardButtons
 } from './styles'
 import { IconButton } from '../IconButton'
-import github from '../../assets/projects/github.svg'
+import github from '../../assets/projects/github.png'
 
 const Card = ({image, title, description, linkCode, linkDemo}) => {
   const handleClick = () => {

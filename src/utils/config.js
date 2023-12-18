@@ -1,23 +1,23 @@
 //Front-end
-import html from '../assets/skillsicons/Front/html5.png'
-import css from '../assets/skillsicons/Front/css.png'
-import JS from '../assets/skillsicons/Front/js.png'
-import reactJS from '../assets/skillsicons/Front/React.svg'
-import next from '../assets/skillsicons/Front/next.png'
-import styledcomponents from '../assets/skillsicons/Front/styled-components.png'
+import html from '../assets/skillsicons/frontend/html5.png'
+import css from '../assets/skillsicons/frontend/css.png'
+import JS from '../assets/skillsicons/frontend/js.png'
+import reactJS from '../assets/skillsicons/frontend/react.png'
+import next from '../assets/skillsicons/frontend/next.png'
+import styledcomponents from '../assets/skillsicons/frontend/styled-components.png'
 
 //Back-end
-import python from '../assets/skillsicons/Back/python.png'
-import django from '../assets/skillsicons/Back/django.png'
-import mysql from '../assets/skillsicons/Back/mysql.png'
-import mongodb from '../assets/skillsicons/Back/mongodb.png'
-import nodejs from '../assets/skillsicons/Back/nodejs.png'
+import python from '../assets/skillsicons/backend/python.png'
+import django from '../assets/skillsicons/backend/django.png'
+import mysql from '../assets/skillsicons/backend/mysql.png'
+import mongodb from '../assets/skillsicons/backend/mongodb.png'
+import nodejs from '../assets/skillsicons/backend/nodejs.png'
 
 //Tools
-import git from '../assets/skillsicons/Ferramentas/git.png'
-import figma from '../assets/skillsicons/Ferramentas/figma.png'
-import photoshop from '../assets/skillsicons/Ferramentas/photoshop.png'
-import vscode from '../assets/skillsicons/Ferramentas/vscode.png'
+import git from '../assets/skillsicons/tools/git.png'
+import figma from '../assets/skillsicons/tools/figma.png'
+import photoshop from '../assets/skillsicons/tools/photoshop.png'
+import vscode from '../assets/skillsicons/tools/vscode.png'
 
 //Projects
 import cs50w from '../assets/projects/cs50w.jpg'
