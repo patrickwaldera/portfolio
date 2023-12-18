@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.5",
     "react-icons": "^4.7.1",
+    "react-router-dom": "^6.21.0",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-timeline-scribble": "^1.0.14",
