@@ -7,11 +7,11 @@ import next from '../assets/skillsicons/frontend/next.png'
 import styledcomponents from '../assets/skillsicons/frontend/styled-components.png'
 
 //Back-end
-import python from '../assets/skillsicons/backend/python.png'
-import django from '../assets/skillsicons/backend/django.png'
+import nodejs from '../assets/skillsicons/backend/nodejs.png'
+import typescript from '../assets/skillsicons/backend/typescript.png'
+import java from '../assets/skillsicons/backend/java.png'
 import mysql from '../assets/skillsicons/backend/mysql.png'
 import mongodb from '../assets/skillsicons/backend/mongodb.png'
-import nodejs from '../assets/skillsicons/backend/nodejs.png'
 
 //Tools
 import git from '../assets/skillsicons/tools/git.png'
@@ -23,6 +23,7 @@ import vscode from '../assets/skillsicons/tools/vscode.png'
 import cs50w from '../assets/projects/cs50w.jpg'
 import weather from '../assets/projects/weatherApp.jpg'
 import techspace from '../assets/projects/techspace.jpg'
+import githubusers from '../assets/projects/githubusers.jpg'
 
 export const skillsFront = [
   {id: 1, image: html, name: 'HTML'},
@@ -33,12 +34,11 @@ export const skillsFront = [
   {id: 6, image: styledcomponents, name: 'Styled Components'}
 ];
 export const skillsBack = [
-  {id: 1, image: python, name: 'Python'},
-  {id: 2, image: django, name: 'Django'},
-  {id: 3, image: mysql, name: 'MySQL'},
-  {id: 4, image: nodejs, name: 'NodeJS'},
-  {id: 5, image: mongodb, name: 'MongoDB'}
-
+  {id: 1, image: nodejs, name: 'NodeJS'},
+  {id: 2, image: typescript, name: 'TypeScript'},
+  {id: 3, image: java, name: 'Java'},
+  {id: 4, image: mysql, name: 'MySQL'},
+  {id: 5, image: mongodb, name: 'MongoDB'},
 ];
 export const skillsTools = [
   {id: 1, image: git, name: 'Git'},
@@ -71,5 +71,13 @@ export const projects = [
     description: 'Front-end de um e-commerce, criado com o framework NextJS, tendo como objetivo praticar conhecimentos em ReactJS, Styled Components, React Hooks e outras tecnologias.',
     linkCode: 'https://github.com/patrickwaldera/tech-space',
     linkDemo: 'https://techspace-pw.vercel.app/'
+  },
+  {
+    id: 4,
+    image: githubusers,
+    title: 'GitHub Users',
+    description: 'Este projeto fez parte de um desafio front-end, uma SPA que consome a API pública do GitHub.',
+    linkCode: 'https://github.com/patrickwaldera/github-users',
+    linkDemo: 'https://githubusers-pw.vercel.app/'
   }
 ]
