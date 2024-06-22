@@ -1,10 +1,10 @@
-import { 
+import { Event, Timeline } from "react-timeline-scribble";
+import {
+  ExpContainer,
   QualificationsContainer,
   QualificationsTitle,
-  TimelineContainer,
-  ExpContainer
-} from './styles'
-import { Timeline, Event } from "react-timeline-scribble";
+  TimelineContainer
+} from './styles';
 
 const Qualifications = () => {
   
@@ -28,7 +28,7 @@ const Qualifications = () => {
           <Timeline>
               <Event interval={"Jan 2024 - Até o momento"} title={"Axon Technology - Desenvolvedor de Software"} />
               <Event interval={"Out 2023 - Nov 2023"} title={"Teledata - Analista de Sistemas"} />
-              <Event interval={"Ago 2017 - Jul 2023"} title={"Exército Brasileiro"} subtitle={"Durante seis anos, servi ao Exército Brasileiro desempenhando a função de Auxiliar da Seção de Comunicação Social cuja missão principal era manter e promover a imagem da instituição, e assumi também, uma função de grande responsabilidade como Auxiliar da Reserva de Armamento."} />
+              <Event interval={"Ago 2017 - Jul 2023"} title={"Exército Brasileiro - Cabo"} subtitle={"Durante seis anos, servi ao Exército Brasileiro desempenhando a função de Auxiliar da Seção de Comunicação Social cuja missão principal era manter e promover a imagem da instituição. Além de desempenhar a função de auxiliar da reserva de armamento, sendo responsável pelo controle e manutenção dos armamentos."} />
           </Timeline>
           </ExpContainer>
         </TimelineContainer>
@@ -37,4 +37,5 @@ const Qualifications = () => {
   )
 }
 
-export { Qualifications }
+export { Qualifications };
+
