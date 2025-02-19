@@ -297,6 +297,11 @@
   resolved "https://registry.npmjs.org/@emotion/utils/-/utils-0.8.2.tgz"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
+"@esbuild/win32-x64@0.16.12":
+  version "0.16.12"
+  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.16.12.tgz"
+  integrity sha512-iPYKN78t3op2+erv2frW568j1q0RpqX6JOLZ7oPPaAV1VaF7dDstOrNw37PVOYoTWE11pV4A1XUitpdEFNIsPg==
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz"
